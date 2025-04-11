@@ -1,0 +1,26 @@
+
+        body{
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        
+        img{
+            border-radius: 15px;
+            width: 400px;
+            height: 250px;
+        }
+        #d1{
+            margin: 30px;
+        }
+        #s1{
+            color: grey;
+        }
+        #s2{
+            background-color: greenyellow;
+            color: white;
+            padding: 4px;
+            border-radius: 10px;
+        }
+          
+        
+    
