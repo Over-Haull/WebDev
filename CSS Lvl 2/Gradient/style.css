@@ -1,0 +1,20 @@
+.box{
+    height: 250px;
+    width: 250px;
+    border: 1px, solid black;
+    background-image: linear-gradient(to bottom right, yellow ,lime,cyan);
+}
+.ball{
+    height: 250px;
+    width: 250px;
+    border: 1px, solid black;
+    margin-top: 10px;
+    background-image: radial-gradient(red,green,blue,orange);
+}
+.cone{
+    height: 250px;
+    width: 250px;
+    border: 1px, solid black;
+    margin-top: 10px;
+    background-image: conic-gradient(from 40deg, red, #000);
+}
