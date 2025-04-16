@@ -1,6 +1,165 @@
 *{
-    margin: 0;
+    margin: 2px;
     padding: 0;
     box-sizing: border-box;
+    
+
 }
 
+.flex-direction{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    flex-direction: column-reverse;
+    }
+
+.flex-wrap{
+    display: flex;
+    width: 600px;
+    height: 300px;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    }
+
+.flex-flow{
+    display: flex;
+    width: 600px;
+    height: 300px;
+    border: 1px solid black;
+    flex-flow: row-reverse wrap;
+    }
+
+.justify-content{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    justify-content: center;
+    }
+
+.align-item{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    align-items: center;
+    }
+    
+.align-content{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    flex-direction: column;
+    align-content: center;
+    }
+
+
+.order{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    flex-direction: column;
+    .or1{
+        order: 3;
+    }
+    .or2{
+        order: 4;
+    }
+    .or3{
+        order: 2;
+    }
+    .or4{
+        order: 1;
+    }
+}
+
+.flex-grow{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+div{
+    background-color: lime;
+}
+    flex-direction: column;
+    .fg1{
+        order: 3;
+    }
+    .fg2{
+        order: 4;
+    }
+    .fg3{
+        order: 2;
+    }
+    .fg4{
+        order: 1;
+    }
+}
+
+.flex-shrink{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+div{
+    background-color: lime;
+}
+    flex-direction: column;
+    .fs1{
+        order: 3;
+    }
+    .fs2{
+        order: 4;
+    }
+    .fs3{
+        order: 2;
+    }
+    .fs4{
+        order: 1;
+    }
+}
+
+.flex-basis{
+    display: flex;
+    /* width: 100px;
+    height: 100px; */
+    border: 1px solid black;
+    flex-basis: 250px;
+}
+
+.flex {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    .fa {
+        flex: 1 1 200px; /* grow shrink basis */
+        background-color: lime;
+      }
+    .fb {
+        flex: 2 2 100px; /* grow shrink basis */
+    background-color: aqua;
+      }
+    .fc {
+        flex: 3 3 300px; /* grow shrink basis */
+    background-color: yellow;
+}   
+}
+.arrange-self{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    align-items: stretch;
+
+    .as2{
+        align-self: flex-end;
+    }
+
+}
+  
+    
