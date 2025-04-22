@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid red;
+    background-color: hsl(30, 38%, 92%);
+       
+}
+.container{
+    display: flex;
+    width: 700px;
+    height: 420px;
+    overflow: hidden;
+
+    background-color: white;
+    border-radius: 1.5em;
+    margin: 1em 2em;
+   
+
+}
+.img{
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+
+}
+.content{
+    height: 100%;
+    width: 50%;
+    text-align: left;
+    margin: 25px;
+}
+.cm{
+    margin: 10px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: grey;
+    letter-spacing: 0.3em;
+}
+.wcm{
+    font-family: "Fraunces", serif;
+    margin: 15px;
+    margin-left: 10px;
+    padding-right: 25%;
+}
+.desc{
+    font-family: "Montserrat", sans-serif;
+    color: lightslategray;
+    padding: 10px;
+    margin-bottom: 5px;
+    letter-spacing: .1em;
+}    
+.green{
+    padding: 10px;
+    color: darkgreen;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.strike{
+    text-decoration: line-through;
+    align-self: center;
+    color: grey;
+}
+
+.btn {
+    margin: 2em 0 1em 0;
+    background-color: darkgreen;
+    width: 100%;
+    padding: 1em 0;
+    color: white;
+    border: 0;
+    border-radius: 0.7em;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: hsl(156, 24%, 24%);
+  }
+  
+  .btn_img {
+    margin-right: 15px;
+  }
+
+
+
+
+
