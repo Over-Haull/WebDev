@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 600px;
+    height: 500px;
+    background-color: brown;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-rows: 20px 1fr 20px;
+    gap: 3px;
+}
+
+.box{
+    background-color: aqua;
+    border: 2px solid black;
+    /* height: 100px;
+    width: 100px; */
+}
+
+#Box1, #Box4{
+    grid-column: 1 / span 3;
+}
+#Box3{
+   grid-column: 2/span 2;
+}
