@@ -5,11 +5,15 @@
 }
 
 .container{
-    height: 100vh;
-    width: 60vw;
+    
+    max-width: 1000px;
+    width: 60%;
+    margin: auto;
+    height: auto;
+
     display: grid;
     overflow-y: hidden;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto, repeat(3, 1fr);
     gap: 15px;
     padding: 15px;
@@ -31,16 +35,28 @@
 }
 
 .title{
-    display: grid;
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+/* a {
+    cursor: pointer;
+} */
+ 
+ .card:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    transition: 0.2s;
+}
+
+
 
 img{
     height: 30px;
     width: 30px;
 }
 
-#card{
+.card{
     border: 5px solid lightgray;
     padding: 15px;
     /* border-color: grey; */
@@ -70,11 +86,11 @@ img{
     grid-area: c6;
 }
 
-#world{
+.world{
     color: blue;
 }
 
-#Design{
+.design{
     color: green;
 }
 
