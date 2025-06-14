@@ -1,0 +1,101 @@
+/* Custom styles and animations */
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: #0a192f; /* A dark navy blue for the background */
+    color: #e2e8f0; /* A light slate color for text */
+}
+
+/* Hero section animated text */
+.role-text {
+    animation: text-animation 5s infinite;
+}
+
+@keyframes text-animation {
+    0% { transform: translateY(0); }
+    10% { transform: translateY(0); }
+    20% { transform: translateY(-100%); }
+    30% { transform: translateY(-100%); }
+    40% { transform: translateY(-200%); }
+    50% { transform: translateY(-200%); }
+    60% { transform: translateY(-300%); }
+    70% { transform: translateY(-300%); }
+    80% { transform: translateY(-400%); }
+    90% { transform: translateY(-400%); }
+    100% { transform: translateY(0); }
+}
+
+/* Project card hover effect */
+.project-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, #e84949, #4458dc);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover::after {
+    transform: scaleX(1);
+}
+
+.project-card .project-content {
+    transition: color 0.5s ease;
+}
+
+.project-card:hover .project-content {
+    color: white;
+}
+
+/* Faded text in the background */
+.faded-text {
+    user-select: none;
+    font-size: 7em;
+    color: rgba(226, 232, 240, 0.05);
+    font-weight: 800;
+    position: absolute;
+    bottom: -0.5em;
+    right: -0.2em;
+    transition: all 0.3s ease;
+    z-index: -10;
+}
+
+/* Wavy background for headings */
+.wavy-bg {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3e%3cpath fill='%231e293b' fill-opacity='1' d='M0,224L20,229.3C40,235,80,245,120,245.3C160,245,200,235,240,208C280,181,320,139,360,138.7C400,139,440,181,480,213.3C520,245,560,267,600,256C640,245,680,203,720,192C760,181,800,203,840,213.3C880,224,920,224,960,197.3C1000,171,1040,117,1080,117.3C1120,117,1160,171,1200,192C1240,213,1280,203,1320,186.7C1360,171,1400,149,1420,138.7L1440,128L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z'%3e%3c/path%3e%3c/svg%3e");
+    background-size: cover;
+    background-position: bottom;
+}
+
+/* Blob shape for skills section */
+.blob-shape {
+    animation: blob-transform 10s ease-in-out infinite both alternate;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+@keyframes blob-transform {
+    0%, 100% { border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%; }
+    20% { border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%; }
+    40% { border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%; }
+    60% { border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%; }
+    80% { border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%; }
+}
+
+/* Floating icons animation */
+.icon-float {
+    animation: icon-float 3s ease-in-out infinite alternate;
+}
+.icon-float-delay-1 { animation-delay: 0.5s; }
+.icon-float-delay-2 { animation-delay: 1s; }
+.icon-float-delay-3 { animation-delay: 1.5s; }
+
+@keyframes icon-float {
+    from { transform: translateY(10px); }
+    to { transform: translateY(-10px); }
+}
